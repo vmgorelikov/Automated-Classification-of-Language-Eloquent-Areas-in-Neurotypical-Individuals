@@ -1,0 +1,6 @@
+ipykernel
+polars
+numpy
+matplotlib
+fastexcel
+torch
