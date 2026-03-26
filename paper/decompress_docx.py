@@ -12,6 +12,8 @@ from sys import argv
 from random import randint
 from zipfile import ZipFile
 
+FORCE = True
+
 
 def sprinkle_in_code(message_: str, code_length: int = 6)\
         -> tuple[str, str]:
@@ -63,7 +65,7 @@ uncompressed_docx_dir = join(script_directory, uncompressed_dir_name)
 
 if not isdir(uncompressed_docx_dir):
     makedirs(uncompressed_docx_dir)
-elif scandir(uncompressed_docx_dir):
+elif scandir(uncompressed_docx_dir) and not FORCE:
     message = 'Каталог для распаковки не пуст. '\
         'Операция может привести к потере данных. Введите цифры '\
         'из этого сообщения, чтобы продолжить.'
