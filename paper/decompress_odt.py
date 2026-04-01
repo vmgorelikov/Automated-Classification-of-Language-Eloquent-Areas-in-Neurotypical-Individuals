@@ -94,7 +94,7 @@ file_to_decompress.close()
 
 for root, _, filenames in walk(uncompressed_odt_dir):
     for filename in filenames:
-        if not filename.endswith(('.xml', '.xml.rels')):
+        if not filename.endswith(('.xml', '.xml.rels', '.rdf')):
             info('Пропущен %s' % filename)
             continue
         file_path = join(root, filename)
