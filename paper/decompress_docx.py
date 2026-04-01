@@ -6,7 +6,7 @@
 '''
 from os import walk
 import xml.dom.minidom
-from logging import warning, fatal, info
+from logging import warning, fatal, info, error
 from glob import glob
 from os import makedirs, scandir
 from os.path import dirname, realpath, join, isabs, isdir, isfile
@@ -94,13 +94,15 @@ file_to_decompress.close()
 
 for root, _, filenames in walk(uncompressed_docx_dir):
     for filename in filenames:
-        if not filename.endswith('.xml'):
+        if not filename.endswith(('.xml', '.xml.rels')):
+            info('Пропущен %s' % filename)
             continue
         file_path = join(root, filename)
         xml_file = open(file_path, 'r+', -1, 'utf-8')
         try:
             dom = xml.dom.minidom.parse(xml_file)
         except Exception:
+            error('Не XML %s' % filename)
             continue
         xml_file.seek(0)
         xml_file.write(dom.toprettyxml(indent=' ', newl='\n'))
