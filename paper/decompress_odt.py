@@ -1,5 +1,5 @@
 '''
-Вспомогательный скрипт для распаковки DOCX для более эффективного
+Вспомогательный скрипт для распаковки odt для более эффективного
 контроля версий.
 
 :Author: В. М. Гореликов <vmgorelikov@edu.hse.ru>
@@ -36,7 +36,7 @@ def sprinkle_in_code(message_: str, code_length: int = 6)\
 
 file_to_decompress_path: str
 script_directory = dirname(realpath(__file__))
-uncompressed_dir_name = 'uncompressed_docx'
+uncompressed_dir_name = 'uncompressed_odt'
 
 if len(argv) >= 2:
     given_filename = argv[1]
@@ -53,7 +53,7 @@ else:
     warning('Файл для распаковки не задан. Ищу кандидатов в моём '
             'каталоге.')
     file_to_decompress_candidates = \
-        glob(join(script_directory, '*.docx'))
+        glob(join(script_directory, '*.odt'))
     if len(file_to_decompress_candidates) > 1:
         fatal('Кандидатов для распаковки более одного. Скрипт '
               'остановлен.')
@@ -63,11 +63,11 @@ else:
         exit(2)
     file_to_decompress_path = file_to_decompress_candidates.pop()
 
-uncompressed_docx_dir = join(script_directory, uncompressed_dir_name)
+uncompressed_odt_dir = join(script_directory, uncompressed_dir_name)
 
-if not isdir(uncompressed_docx_dir):
-    makedirs(uncompressed_docx_dir)
-elif scandir(uncompressed_docx_dir) and not FORCE:
+if not isdir(uncompressed_odt_dir):
+    makedirs(uncompressed_odt_dir)
+elif scandir(uncompressed_odt_dir) and not FORCE:
     message = 'Каталог для распаковки не пуст. '\
         'Операция может привести к потере данных. Введите цифры '\
         'из этого сообщения, чтобы продолжить.'
@@ -86,13 +86,13 @@ elif scandir(uncompressed_docx_dir) and not FORCE:
         exit(4)
 
 file_to_decompress = ZipFile(file_to_decompress_path, 'r')
-file_to_decompress.extractall(uncompressed_docx_dir)
+file_to_decompress.extractall(uncompressed_odt_dir)
 file_to_decompress.close()
 
 # добавим LINE FEED для более полезных и потенциально более компактных
 # diff-ов
 
-for root, _, filenames in walk(uncompressed_docx_dir):
+for root, _, filenames in walk(uncompressed_odt_dir):
     for filename in filenames:
         if not filename.endswith(('.xml', '.xml.rels')):
             info('Пропущен %s' % filename)
