@@ -12,14 +12,14 @@
  </office:font-face-decls>
  <office:styles>
   <style:default-style style:family="graphic">
-   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="3mm" draw:shadow-offset-y="3mm" draw:start-line-spacing-horizontal="2.83mm" draw:start-line-spacing-vertical="2.83mm" draw:end-line-spacing-horizontal="2.83mm" draw:end-line-spacing-vertical="2.83mm" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0mm" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="3mm" draw:shadow-offset-y="3mm" draw:start-line-spacing-horizontal="2.83mm" draw:start-line-spacing-vertical="2.83mm" draw:end-line-spacing-horizontal="2.83mm" draw:end-line-spacing-vertical="2.83mm" style:writing-mode="lr-tb" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0mm" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Times New Roman" fo:font-size="14pt" fo:language="ru" fo:country="RU" style:letter-kerning="true" style:font-name-asian="NSimSun" style:font-size-asian="14pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Arial1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
   </style:default-style>
   <style:default-style style:family="paragraph">
-   <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" fo:hyphenation-keep="auto" loext:hyphenation-keep-type="column" loext:hyphenation-keep-line="false" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="11.34mm" style:writing-mode="page"/>
+   <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" fo:hyphenation-keep="auto" loext:hyphenation-keep-type="column" loext:hyphenation-keep-line="false" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="11.34mm" style:writing-mode="lr-tb"/>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Times New Roman" fo:font-size="14pt" fo:language="ru" fo:country="RU" style:letter-kerning="true" style:font-name-asian="NSimSun" style:font-size-asian="14pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Arial1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2" loext:hyphenation-no-caps="false" loext:hyphenation-no-last-word="false" loext:hyphenation-word-char-count="5" loext:hyphenation-zone="no-limit"/>
   </style:default-style>
   <style:default-style style:family="table">
@@ -120,8 +120,8 @@
     </style:tab-stops>
    </style:paragraph-properties>
   </style:style>
-  <style:style style:name="Заглавие_20_таблицы" style:display-name="Заглавие таблицы" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-top="4.23mm" fo:margin-bottom="1.06mm" style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0mm" style:auto-text-indent="false" loext:word-spacing-minimum="75%" loext:word-spacing-maximum="133%"/>
+  <style:style style:name="Заглавие_20_таблицы" style:display-name="Заглавие таблицы" style:family="paragraph" style:parent-style-name="Text_20_body" style:master-page-name="">
+   <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-top="4.23mm" fo:margin-bottom="1.06mm" style:contextual-spacing="false" fo:line-height="100%" fo:text-align="center" style:justify-single-word="false" fo:keep-together="always" fo:text-indent="0mm" style:auto-text-indent="false" style:page-number="auto" fo:keep-with-next="always" loext:word-spacing-minimum="75%" loext:word-spacing-maximum="133%"/>
    <style:text-properties fo:font-size="10pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
   </style:style>
   <style:style style:name="Table_20_Contents" style:display-name="Table Contents" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
@@ -553,52 +553,52 @@
    <style:text-properties fo:language="en" fo:country="US"/>
   </style:style>
   <text:outline-style style:name="Outline">
-   <text:outline-level-style text:level="1" style:num-format="">
+   <text:outline-level-style text:level="1" loext:num-list-format="%1%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="2" style:num-format="">
+   <text:outline-level-style text:level="2" loext:num-list-format="%2%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="3" style:num-format="">
+   <text:outline-level-style text:level="3" loext:num-list-format="%3%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="4" style:num-format="">
+   <text:outline-level-style text:level="4" loext:num-list-format="%4%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="5" style:num-format="">
+   <text:outline-level-style text:level="5" loext:num-list-format="%5%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="6" style:num-format="">
+   <text:outline-level-style text:level="6" loext:num-list-format="%6%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="7" style:num-format="">
+   <text:outline-level-style text:level="7" loext:num-list-format="%7%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="8" style:num-format="">
+   <text:outline-level-style text:level="8" loext:num-list-format="%8%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="9" style:num-format="">
+   <text:outline-level-style text:level="9" loext:num-list-format="%9%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
    </text:outline-level-style>
-   <text:outline-level-style text:level="10" style:num-format="">
+   <text:outline-level-style text:level="10" loext:num-list-format="%10%" style:num-format="">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="nothing"/>
     </style:list-level-properties>
@@ -1085,73 +1085,73 @@
   <style:style style:name="таблицы2.1" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-top="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.2" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.3" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.4" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.5" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.6" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.7" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.8" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.9" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.10" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.11" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-top="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.12" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-top="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.13" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.14" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.15" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-top="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <style:style style:name="таблицы2.16" style:family="table-cell">
    <style:table-cell-properties fo:border-left="0.51pt solid #000000" fo:border-right="0.51pt solid #000000" fo:border-bottom="0.51pt solid #000000" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="'Times New Roman'" style:font-name-asian="NSimSun" style:font-family-asian="NSimSun" style:font-name-complex="Arial" style:font-family-complex="Arial" style:font-family-generic-complex="swiss"/>
   </style:style>
   <table:table-template table:name="таблицы2" table:first-row-end-column="row" table:first-row-start-column="row" table:last-row-end-column="row" table:last-row-start-column="row">
    <table:first-row table:style-name="таблицы2.1"/>
@@ -1172,7 +1172,7 @@
    <loext:last-row-start-column table:style-name="таблицы2.13"/>
   </table:table-template>
   <style:default-page-layout>
-   <style:page-layout-properties style:layout-grid-standard-mode="true"/>
+   <style:page-layout-properties style:writing-mode="lr-tb" style:layout-grid-standard-mode="true"/>
   </style:default-page-layout>
   <loext:theme loext:name="Office">
    <loext:theme-colors loext:name="LibreOffice">

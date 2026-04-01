@@ -13,7 +13,7 @@
  </office:font-face-decls>
  <office:automatic-styles>
   <style:style style:name="Table1" style:family="table">
-   <style:table-properties style:width="104.78mm" fo:margin-top="0mm" fo:margin-bottom="4.23mm" table:align="center" style:shadow="none" style:may-break-between-rows="true" style:writing-mode="page" table:border-model="collapsing"/>
+   <style:table-properties style:width="104.78mm" fo:margin-top="0mm" fo:margin-bottom="4.23mm" table:align="center" style:may-break-between-rows="false" style:writing-mode="page" table:border-model="collapsing"/>
   </style:style>
   <style:style style:name="Table1.A" style:family="table-column">
    <style:table-column-properties style:column-width="29.62mm"/>
@@ -22,7 +22,7 @@
    <style:table-column-properties style:column-width="75.16mm"/>
   </style:style>
   <style:style style:name="Table1.1" style:family="table-row">
-   <style:table-row-properties fo:keep-together="auto"/>
+   <style:table-row-properties fo:keep-together="always"/>
   </style:style>
   <style:style style:name="Table1.A1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:background-color="transparent" fo:padding="0.97mm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="0.5pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="page">
@@ -181,24 +181,27 @@
    <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:text-align="left" style:justify-single-word="false" fo:orphans="0" fo:widows="0" fo:text-indent="0mm" style:auto-text-indent="false"/>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Times New Roman" fo:font-size="12pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="список"/>
-  <style:style style:name="P34" style:family="paragraph">
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties fo:language="ru" fo:country="RU"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="список"/>
+  <style:style style:name="P35" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-top="0mm" fo:margin-bottom="0mm" fo:line-height="100%" fo:text-align="left" fo:text-indent="0mm" style:punctuation-wrap="hanging" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Heading_20_2" style:list-style-name="Главы_20_работы"/>
-  <style:style style:name="P36" style:family="paragraph">
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Heading_20_2" style:list-style-name="Главы_20_работы"/>
+  <style:style style:name="P37" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:line-height="100%" fo:text-indent="0mm" style:punctuation-wrap="hanging"/>
   </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Heading_20_1" style:list-style-name="">
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Heading_20_1" style:list-style-name="">
    <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0mm" style:auto-text-indent="false"/>
   </style:style>
-  <style:style style:name="P38" style:family="paragraph">
+  <style:style style:name="P39" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="31.12mm" fo:margin-right="0mm" fo:margin-top="0mm" fo:margin-bottom="0mm" fo:line-height="100%" fo:text-align="left" fo:text-indent="0mm" style:punctuation-wrap="hanging" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Heading_20_1" style:list-style-name="">
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Heading_20_1" style:list-style-name="">
    <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:margin-top="0mm" fo:margin-bottom="2.12mm" style:contextual-spacing="false" fo:text-indent="10mm" style:auto-text-indent="false" fo:break-before="page"/>
   </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="">
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:margin-left="0mm" fo:margin-right="0mm" fo:text-indent="10mm" style:auto-text-indent="false"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
@@ -250,19 +253,19 @@
    <style:text-properties fo:font-size="14pt" fo:language="ru" fo:country="RU" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
   </style:style>
   <style:style style:name="T17" style:family="text">
-   <style:text-properties fo:language="en" fo:country="US"/>
+   <style:text-properties officeooo:rsid="0011998f"/>
   </style:style>
   <style:style style:name="T18" style:family="text">
-   <style:text-properties fo:font-size="12pt" fo:font-style="normal" fo:font-weight="normal" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+   <style:text-properties fo:language="ru" fo:country="RU" officeooo:rsid="0011998f"/>
   </style:style>
   <style:style style:name="T19" style:family="text">
-   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+   <style:text-properties fo:language="en" fo:country="US"/>
   </style:style>
   <style:style style:name="T20" style:family="text">
-   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
+   <style:text-properties fo:font-size="12pt" fo:font-style="normal" fo:font-weight="normal" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="12pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T21" style:family="text">
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
+   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
   </style:style>
   <style:style style:name="T22" style:family="text">
    <style:text-properties fo:language="ru" fo:country="RU" fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
@@ -540,7 +543,7 @@
      </text:p>
     </text:index-body>
    </text:table-of-content>
-   <text:list xml:id="list2504557993" text:style-name="Главы_20_работы">
+   <text:list xml:id="list2573562987" text:style-name="Главы_20_работы">
     <text:list-item>
      <text:h text:style-name="P27" text:outline-level="1">
       <text:bookmark-start text:name="__RefNumPara__12073_2322845629"/>
@@ -559,7 +562,13 @@
    </text:p>
    <text:list text:style-name="Numbering_20_123">
     <text:list-item>
-     <text:p text:style-name="P28">провести разведочный анализ данных эксперимента с называнием предметов и действий при транскраниальной магнитной стимуляции для обнаружения черт данных, позволяющих провести классификацию или затрудняющих её;</text:p>
+     <text:p text:style-name="P28">
+      провести разведочный анализ данных 
+      <text:span text:style-name="T17">двух </text:span>
+      эксперимент
+      <text:span text:style-name="T18">ов</text:span>
+       с называнием предметов и действий при транскраниальной магнитной стимуляции для обнаружения черт данных, позволяющих провести классификацию или затрудняющих её;
+     </text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P28">построить модуль, отвечающий за обработку данных перед извлечением признаков;</text:p>
@@ -568,7 +577,13 @@
      <text:p text:style-name="P28">построить модуль, отвечающий за извлечение признаков для целей классификации из набора данных, подобного рассмотренному;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P28">выбрать метрики для оценки качества модели машинного обучения;</text:p>
+     <text:p text:style-name="P28">
+      выбрать метрики для 
+      <text:span text:style-name="T17">промежуточной и окончательной </text:span>
+      оценки качества 
+      <text:span text:style-name="T17">классификатора</text:span>
+      ;
+     </text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P28">построить соответствующую задаче модель машинного обучения и обучить её;</text:p>
@@ -577,7 +592,7 @@
      <text:p text:style-name="P28">оценить качество полученного классификатора.</text:p>
     </text:list-item>
    </text:list>
-   <text:list text:continue-list="list2504557993" text:style-name="Главы_20_работы">
+   <text:list text:continue-list="list2573562987" text:style-name="Главы_20_работы">
     <text:list-item>
      <text:h text:style-name="P29" text:outline-level="1">
       <text:bookmark-start text:name="__RefHeading___Toc7722_3529965071"/>
@@ -600,10 +615,11 @@
    </text:list>
    <text:p text:style-name="Text_20_body" loext:marker-style-name="T2">
     <text:span text:style-name="T2">При предобработке набора данных было исключено 114 записей с неоднозначной разметкой типов ошибок, после чего осталось 22146 записей. Названия типов ошибок были приведены к единообразию. Затем к ним было применено </text:span>
-    <text:span text:style-name="T17">label encoding </text:span>
+    <text:span text:style-name="T19">label encoding </text:span>
     <text:span text:style-name="T2">со следующим соответствием номеров классов типам ошибок:</text:span>
    </text:p>
    <text:p text:style-name="Заглавие_20_таблицы" loext:marker-style-name="T2">
+    <text:soft-page-break/>
     Таблица 1. Соответствие номеров классов типам ошибок
     <text:span text:style-name="T2"/>
    </text:p>
@@ -612,128 +628,127 @@
     <table:table-column table:style-name="Table1.B"/>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Номер класса</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       Номер класса
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B1" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Тип ошибки</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       Тип ошибки
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">0</text:span>
-       <text:span text:style-name="T18"/>
-      </text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-      <text:p text:style-name="P32" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Отсутствие ошибки</text:span>
-       <text:span text:style-name="T18"/>
-      </text:p>
-     </table:table-cell>
-    </table:table-row>
-    <text:soft-page-break/>
-    <table:table-row table:style-name="Table1.1">
-     <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">1</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       0
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B2" office:value-type="string">
       <text:p text:style-name="P32" loext:marker-style-name="T20">
-       <text:span text:style-name="T21">S</text:span>
-       <text:span text:style-name="T20">peech arrest</text:span>
+       Отсутствие ошибки
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">2</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       1
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-      <text:p text:style-name="P32" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Аномия</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P32" loext:marker-style-name="T21">
+       <text:span text:style-name="T19">S</text:span>
+       peech arrest
       </text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">3</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       2
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-      <text:p text:style-name="P32" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Дизартрия</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P32" loext:marker-style-name="T20">
+       Аномия
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">4</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       3
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-      <text:p text:style-name="P32" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Задержка</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P32" loext:marker-style-name="T20">
+       Дизартрия
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">5</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       4
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-      <text:p text:style-name="P32" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Поиск слова</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P32" loext:marker-style-name="T20">
+       Задержка
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">6</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       5
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-      <text:p text:style-name="P32" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Семантическая парафазия</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P32" loext:marker-style-name="T20">
+       Поиск слова
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Table1.1">
      <table:table-cell table:style-name="Table1.A2" office:value-type="string">
-      <text:p text:style-name="P31" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">7</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       6
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Table1.B2" office:value-type="string">
-      <text:p text:style-name="P32" loext:marker-style-name="T18">
-       <text:span text:style-name="T19">Фонетическая парафазия</text:span>
-       <text:span text:style-name="T18"/>
+      <text:p text:style-name="P32" loext:marker-style-name="T20">
+       Семантическая парафазия
+       <text:span text:style-name="T20"/>
+      </text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="Table1.1">
+     <table:table-cell table:style-name="Table1.A2" office:value-type="string">
+      <text:p text:style-name="P31" loext:marker-style-name="T20">
+       7
+       <text:span text:style-name="T20"/>
+      </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Table1.B2" office:value-type="string">
+      <text:p text:style-name="P32" loext:marker-style-name="T20">
+       Фонетическая парафазия
+       <text:span text:style-name="T20"/>
       </text:p>
      </table:table-cell>
     </table:table-row>
@@ -743,7 +758,7 @@
     <text:span text:style-name="T22">нрзб</text:span>
     <text:span text:style-name="T2">, обозначающей неразборчивую речь, с целью обеспечить независимость получаемой модели от правил расшифровки, применённых для используемого набора данных, поскольку они могут не соблюдаться в других наборах данных, например, полученных при автоматическом распознавании речи.</text:span>
    </text:p>
-   <text:list xml:id="list140651360464307" text:continue-numbering="true" text:style-name="Главы_20_работы">
+   <text:list xml:id="list181742390927986" text:continue-numbering="true" text:style-name="Главы_20_работы">
     <text:list-item>
      <text:h text:style-name="P29" text:outline-level="1">
       <text:bookmark-start text:name="__RefHeading___Toc10554_2267508957"/>
@@ -753,23 +768,21 @@
      </text:h>
     </text:list-item>
    </text:list>
-   <text:p text:style-name="Text_20_body">
-    <text:span text:style-name="T2">При извлечении признаков использовались следующие поля набора данных эксперимента:</text:span>
-   </text:p>
+   <text:p text:style-name="P33">При извлечении признаков использовались следующие поля набора данных эксперимента:</text:p>
    <text:list text:style-name="список">
     <text:list-item>
-     <text:p text:style-name="P33">текст, соответствующий стимулу: существительное, обозначающее предмет, или глагол;</text:p>
+     <text:p text:style-name="P34">текст, соответствующий стимулу: существительное, обозначающее предмет, или глагол;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P33">время начала ответа по отношению ко времени начала стимуляции, в миллисекундах;</text:p>
+     <text:p text:style-name="P34">время начала ответа по отношению ко времени начала стимуляции, в миллисекундах;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P33">
+     <text:p text:style-name="P34">
       <office:annotation office:name="__Annotation__203_1076520121" loext:resolved="false">
        <dc:creator>В. М. Гореликов</dc:creator>
        <dc:date>2026-04-01T01:47:09</dc:date>
        <meta:creator-initials>В</meta:creator-initials>
-       <text:p text:style-name="P34">
+       <text:p text:style-name="P35">
         <text:span text:style-name="T23">Имеется в виду транскрипт в орфографии, не транскрипция по МФШ. Пока что я не использовал её, потому что само наличие транскрипции — уже сильная подсказка для классификатора, при этом применение классификатора, ожидающего транскрипцию, было бы более ограничено, чем ожидающего только текст</text:span>
        </text:p>
       </office:annotation>
@@ -780,19 +793,20 @@
    </text:list>
    <text:p text:style-name="Text_20_body" loext:marker-style-name="T2">
     <text:span text:style-name="T2">До построения модели машинного обучения полезность признаков предварительно оценивалась по метрике </text:span>
-    <text:span text:style-name="T17">F1 </text:span>
+    <text:span text:style-name="T19">F1 </text:span>
     <text:span text:style-name="T2">на предсказаниях ансамбля решающих деревьев типа </text:span>
-    <text:span text:style-name="T17">random forest </text:span>
+    <text:span text:style-name="T19">random forest </text:span>
     <text:span text:style-name="T2">как нечувствительного к масштабу признаков и нелинейности закономерностей в них, а также несклонного к переобучению, при кроссвалидации методом </text:span>
-    <text:span text:style-name="T17">K-fold </text:span>
+    <text:span text:style-name="T19">K-fold </text:span>
     <text:span text:style-name="T2">с количеством подвыборок 5. Признаки, положительно влияющие на значение метрики, оставлялись.</text:span>
    </text:p>
-   <text:list text:continue-list="list140651360464307" text:style-name="Главы_20_работы">
+   <text:list text:continue-list="list181742390927986" text:style-name="Главы_20_работы">
     <text:list-item>
      <text:list>
       <text:list-item>
-       <text:h text:style-name="P35" text:outline-level="2">
+       <text:h text:style-name="P36" text:outline-level="2">
         <text:bookmark-start text:name="__RefHeading___Toc7606_3529965071"/>
+        <text:soft-page-break/>
         Признаки, указывающие на временные характеристики ответа
         <text:bookmark-end text:name="__RefHeading___Toc7606_3529965071"/>
        </text:h>
@@ -802,22 +816,21 @@
    </text:list>
    <text:p text:style-name="Text_20_body">
     В качестве первых двух признаков были использованы время начала ответа и отношение длины ответа к длине текста стимула. Предполагалось, что время начала ответа позволит определить ответы с задержкой, и отношение длин — ответы со 
-    <text:soft-page-break/>
-    <text:span text:style-name="T17">speech arrest </text:span>
+    <text:span text:style-name="T19">speech arrest </text:span>
     <text:span text:style-name="T2">и аномией, для которых оно было бы значительно меньше одного, и с поиском слова, для которых оно было бы значительно больше одного.</text:span>
    </text:p>
    <text:list text:continue-numbering="true" text:style-name="Главы_20_работы">
     <text:list-item>
      <text:list>
       <text:list-item>
-       <text:h text:style-name="P35" text:outline-level="2">
+       <text:h text:style-name="P36" text:outline-level="2">
         <text:bookmark-start text:name="__RefHeading___Toc7724_3529965071"/>
         Признаки, описывающие отличие ответа от стимула 
         <office:annotation office:name="__Annotation__226_1076520121" loext:resolved="false">
          <dc:creator>В. М. Гореликов</dc:creator>
          <dc:date>2026-04-01T01:45:04</dc:date>
          <meta:creator-initials>В</meta:creator-initials>
-         <text:p text:style-name="P36">
+         <text:p text:style-name="P37">
           <text:span text:style-name="T23">Возможно, это можно заменить на более корректное описание, поскольку речь идёт всё-таки о сравнении орфографических записей</text:span>
          </text:p>
         </office:annotation>
@@ -831,13 +844,11 @@
    </text:list>
    <text:p text:style-name="Text_20_body">
     Для пар текстов стимулов и ответов при помощи библиотеки R
-    <text:span text:style-name="T17">apidFuzz </text:span>
+    <text:span text:style-name="T19">apidFuzz </text:span>
     были рассчитаны нормализованные по длине первых компоненты расстояния Левенштейна — минимальные количества вставок, удалений и замен символов, позволяющих из текста стимула получить ответ. Нормализация была необходима, чтобы 
     <text:span text:style-name="T2">учитывать значимость изменений в зависимости от общего количества фонем: чем оно больше, тем меньше влияние каждой отдельной фонемы на значение. Предполагалось, что при семантической парафазии и поиске слова эти расстояния будут больше, чем при фонетических ошибках — дизартрии и фонетической парафазии.</text:span>
    </text:p>
-   <text:p text:style-name="Text_20_body">
-    <text:span text:style-name="T2">Были рассчитаны нормализованные количества операций и для отдельных символов и пар символов. Предполагалось, что для дизартрии и фонетической парафазии характерны различные замены, удаления и вставки.</text:span>
-   </text:p>
+   <text:p text:style-name="P33">Были рассчитаны нормализованные количества операций и для отдельных символов и пар символов. Предполагалось, что для дизартрии и фонетической парафазии характерны различные замены, удаления и вставки.</text:p>
    <text:list text:continue-numbering="true" text:style-name="Главы_20_работы">
     <text:list-item>
      <text:h text:style-name="P29" text:outline-level="1">
@@ -862,18 +873,16 @@
     </text:list-item>
    </text:list>
    <text:p text:style-name="Text_20_body"/>
-   <text:h text:style-name="P37" text:outline-level="1" loext:marker-style-name="T2">
+   <text:h text:style-name="P38" text:outline-level="1" loext:marker-style-name="T2">
     <text:bookmark-start text:name="__RefHeading___Toc2557_3788538354"/>
-    <text:span text:style-name="T2">
-     <office:annotation office:name="__Annotation__251_1076520121" loext:resolved="false">
-      <dc:creator>В. М. Гореликов</dc:creator>
-      <dc:date>2026-03-31T22:31:41</dc:date>
-      <meta:creator-initials>В</meta:creator-initials>
-      <text:p text:style-name="P36">
-       <text:span text:style-name="T23">Этот раздел предстоит оформить, как требуется на ФиКЛе</text:span>
-      </text:p>
-     </office:annotation>
-    </text:span>
+    <office:annotation office:name="__Annotation__251_1076520121" loext:resolved="false">
+     <dc:creator>В. М. Гореликов</dc:creator>
+     <dc:date>2026-03-31T22:31:41</dc:date>
+     <meta:creator-initials>В</meta:creator-initials>
+     <text:p text:style-name="P37">
+      <text:span text:style-name="T23">Этот раздел предстоит оформить, как требуется на ФиКЛе</text:span>
+     </text:p>
+    </office:annotation>
     <text:span text:style-name="T2">Литература</text:span>
     <office:annotation-end office:name="__Annotation__251_1076520121"/>
     <text:bookmark-end text:name="__RefHeading___Toc2557_3788538354"/>
@@ -887,43 +896,39 @@
     <text:span text:style-name="T2"/>
    </text:p>
    <text:p text:style-name="Библиография" loext:marker-style-name="T2">
+    <text:soft-page-break/>
     <text:span text:style-name="T2">(Ссылка на статью про RapidFuzz, если такая есть, и статью про используемый в ней алгоритм)</text:span>
     <text:span text:style-name="T2"/>
    </text:p>
-   <text:p text:style-name="Библиография" loext:marker-style-name="T17">
-    <text:span text:style-name="T17">Pedregosa et al. 2011 — F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, </text:span>
-    <text:soft-page-break/>
-    <text:span text:style-name="T17">J. Vanderplas, A. Passos, D. Courpeau, M. Brucher, M. Perrot, E. Duchesnay. Scikit-learn: Machine Learning in Python // Journal of Machine Learning Research 12(85), 2011. P. 2825–2830.</text:span>
-    <text:span text:style-name="T17"/>
+   <text:p text:style-name="Библиография" loext:marker-style-name="T19">
+    <text:span text:style-name="T19">Pedregosa et al. 2011 — F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Courpeau, M. Brucher, M. Perrot, E. Duchesnay. Scikit-learn: Machine Learning in Python // Journal of Machine Learning Research 12(85), 2011. P. 2825–2830.</text:span>
+    <text:span text:style-name="T19"/>
    </text:p>
    <text:p text:style-name="Библиография" loext:marker-style-name="T2">
-    <text:span text:style-name="T2">
-     <office:annotation office:name="__Annotation__261_1076520121" loext:resolved="false">
-      <dc:creator>В. М. Гореликов</dc:creator>
-      <dc:date>2026-03-31T22:31:51</dc:date>
-      <meta:creator-initials>В</meta:creator-initials>
-      <text:p text:style-name="P38">
-       <text:span text:style-name="T23">Это понадобится, если эксперименты с частотным списком НКРЯ закончатся хорошо</text:span>
-      </text:p>
-     </office:annotation>
-    </text:span>
+    <office:annotation office:name="__Annotation__261_1076520121" loext:resolved="false">
+     <dc:creator>В. М. Гореликов</dc:creator>
+     <dc:date>2026-03-31T22:31:51</dc:date>
+     <meta:creator-initials>В</meta:creator-initials>
+     <text:p text:style-name="P39">
+      <text:span text:style-name="T23">Это понадобится, если эксперименты с частотным списком НКРЯ закончатся хорошо</text:span>
+     </text:p>
+    </office:annotation>
     <text:span text:style-name="T2">Савчук С. О., Архангельский Т. А., Бонч-Осмоловская А. А., Донина О. В., Кузнецова Ю. Н., Ляшевская О. Н., Орехов Б. В., Подрядчикова М. В. Национальный корпус русского языка 2.0: новые возможности и перспективы развития. Вопросы языкознания, 2024, 2: 7–34.</text:span>
-    <text:span text:style-name="T2"/>
    </text:p>
    <text:p text:style-name="Библиография" loext:marker-style-name="T2">
     <text:span text:style-name="T2">Е. В. Рахилина, Г. И. Кустова, О. Н. Ляшевская, Т. И. Резникова, О. Ю. Шеманаева. Задачи и принципы семантической разметки лексики в НКРЯ // Национальный корпус русского языка: 2006—2008. Новые результаты и перспективы. СПб.: Нестор-История, 2009. C. 215—239.</text:span>
     <office:annotation-end office:name="__Annotation__261_1076520121"/>
    </text:p>
-   <text:h text:style-name="P39" text:outline-level="1">
+   <text:h text:style-name="P40" text:outline-level="1">
     <text:bookmark-start text:name="__RefHeading___Toc10837_3918596271"/>
     Приложение 1. Ссылка на исходный код в публичном репозитории под управлением 
-    <text:span text:style-name="T17">git</text:span>
+    <text:span text:style-name="T19">git</text:span>
     <text:bookmark-end text:name="__RefHeading___Toc10837_3918596271"/>
    </text:h>
-   <text:p text:style-name="P40">
+   <text:p text:style-name="P41">
     <text:a xlink:type="simple" xlink:href="https://github.com/vmgorelikov/Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">
      <text:span text:style-name="Internet_20_link">
-      <text:span text:style-name="T17">https://github.com/vmgorelikov/Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals</text:span>
+      <text:span text:style-name="T19">https://github.com/vmgorelikov/Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals</text:span>
      </text:span>
     </text:a>
    </text:p>
