@@ -4,6 +4,8 @@
 
 :Author: В. М. Гореликов <vmgorelikov@edu.hse.ru>
 '''
+from os import walk
+import xml.dom.minidom
 from logging import warning, fatal, info
 from glob import glob
 from os import makedirs, scandir
@@ -86,4 +88,23 @@ elif scandir(uncompressed_docx_dir) and not FORCE:
 file_to_decompress = ZipFile(file_to_decompress_path, 'r')
 file_to_decompress.extractall(uncompressed_docx_dir)
 file_to_decompress.close()
+
+# добавим LINE FEED для более полезных и потенциально более компактных
+# diff-ов
+
+for root, _, filenames in walk(uncompressed_docx_dir):
+    for filename in filenames:
+        if not filename.endswith('.xml'):
+            continue
+        file_path = join(root, filename)
+        xml_file = open(file_path, 'r+', -1, 'utf-8')
+        try:
+            dom = xml.dom.minidom.parse(xml_file)
+        except Exception:
+            continue
+        xml_file.seek(0)
+        xml_file.write(dom.toprettyxml(indent=' ', newl='\n'))
+        xml_file.truncate()
+        xml_file.close()
+
 info('OK')
