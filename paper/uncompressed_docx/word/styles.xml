@@ -1,2 +1,563 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="w14"><w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="NSimSun" w:cs="Arial"/><w:kern w:val="2"/><w:sz w:val="28"/><w:szCs w:val="24"/><w:lang w:val="ru-RU" w:eastAsia="zh-CN" w:bidi="hi-IN"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:suppressAutoHyphens w:val="true"/></w:pPr></w:pPrDefault></w:docDefaults><w:style w:type="paragraph" w:styleId="Normal"><w:name w:val="Normal"/><w:qFormat/><w:pPr><w:widowControl/><w:tabs><w:tab w:val="clear" w:pos="709"/><w:tab w:val="left" w:pos="567" w:leader="none"/></w:tabs><w:suppressAutoHyphens w:val="true"/><w:overflowPunct w:val="false"/><w:bidi w:val="0"/><w:spacing w:lineRule="auto" w:line="360" w:before="0" w:after="0"/><w:ind w:start="0" w:end="0" w:firstLine="567"/><w:jc w:val="start"/></w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="NSimSun" w:cs="Arial"/><w:color w:val="auto"/><w:kern w:val="2"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="ru-RU" w:eastAsia="zh-CN" w:bidi="hi-IN"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading1"><w:name w:val="Heading 1"/><w:basedOn w:val="Heading"/><w:next w:val="TextBody"/><w:qFormat/><w:pPr><w:numPr><w:ilvl w:val="0"/><w:numId w:val="4"/></w:numPr><w:tabs><w:tab w:val="left" w:pos="567" w:leader="none"/></w:tabs><w:spacing w:before="360" w:after="120"/><w:outlineLvl w:val="0"/></w:pPr><w:rPr><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="36"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading2"><w:name w:val="Heading 2"/><w:basedOn w:val="Heading"/><w:next w:val="TextBody"/><w:qFormat/><w:pPr><w:numPr><w:ilvl w:val="1"/><w:numId w:val="2"/></w:numPr><w:spacing w:before="120" w:after="0"/><w:ind w:start="0" w:end="0" w:firstLine="567"/><w:outlineLvl w:val="1"/></w:pPr><w:rPr><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="32"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading3"><w:name w:val="Heading 3"/><w:basedOn w:val="Heading"/><w:next w:val="TextBody"/><w:qFormat/><w:pPr><w:numPr><w:ilvl w:val="2"/><w:numId w:val="2"/></w:numPr><w:spacing w:before="120" w:after="0"/><w:ind w:start="0" w:end="0" w:firstLine="567"/><w:outlineLvl w:val="2"/></w:pPr><w:rPr><w:b/><w:bCs/><w:sz w:val="24"/><w:szCs w:val="28"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading4"><w:name w:val="Heading 4"/><w:basedOn w:val="Heading"/><w:next w:val="TextBody"/><w:qFormat/><w:pPr><w:numPr><w:ilvl w:val="3"/><w:numId w:val="2"/></w:numPr><w:spacing w:before="120" w:after="120"/><w:outlineLvl w:val="3"/></w:pPr><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial"/><w:b/><w:bCs/><w:i w:val="false"/><w:iCs/><w:color w:val="FF0000"/><w:sz w:val="26"/><w:szCs w:val="26"/><w:shd w:fill="0000FF" w:val="clear"/></w:rPr></w:style><w:style w:type="character" w:styleId="DefaultParagraphFont"><w:name w:val="Default Paragraph Font"/><w:qFormat/><w:rPr></w:rPr></w:style><w:style w:type="character" w:styleId="Emphasis"><w:name w:val="Emphasis"/><w:basedOn w:val="DefaultParagraphFont"/><w:qFormat/><w:rPr><w:i/><w:iCs/></w:rPr></w:style><w:style w:type="character" w:styleId="NumberingSymbols"><w:name w:val="Numbering Symbols"/><w:qFormat/><w:rPr><w:i w:val="false"/><w:iCs w:val="false"/></w:rPr></w:style><w:style w:type="character" w:styleId="InternetLink"><w:name w:val="Hyperlink"/><w:rPr><w:color w:val="auto"/><w:u w:val="none"/></w:rPr></w:style><w:style w:type="character" w:styleId="IndexLink"><w:name w:val="Index Link"/><w:qFormat/><w:rPr></w:rPr></w:style><w:style w:type="character" w:styleId="FootnoteCharacters"><w:name w:val="Footnote Characters"/><w:qFormat/><w:rPr><w:vertAlign w:val="superscript"/></w:rPr></w:style><w:style w:type="character" w:styleId="FootnoteAnchor"><w:name w:val="Footnote Reference"/><w:rPr><w:vertAlign w:val="superscript"/></w:rPr></w:style><w:style w:type="character" w:styleId="EndnoteCharacters"><w:name w:val="Endnote Characters"/><w:qFormat/><w:rPr><w:vertAlign w:val="superscript"/></w:rPr></w:style><w:style w:type="character" w:styleId="EndnoteAnchor"><w:name w:val="Endnote Reference"/><w:rPr><w:vertAlign w:val="superscript"/></w:rPr></w:style><w:style w:type="character" w:styleId="Style10"><w:name w:val="Собственные термины"/><w:qFormat/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="NSimSun" w:cs="Arial"/><w:color w:val="auto"/><w:spacing w:val="20"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:eastAsia="zh-CN" w:bidi="hi-IN"/></w:rPr></w:style><w:style w:type="character" w:styleId="VisitedInternetLink"><w:name w:val="FollowedHyperlink"/><w:rPr><w:color w:val="auto"/><w:u w:val="none"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading"><w:name w:val="Heading"/><w:basedOn w:val="Normal"/><w:next w:val="TextBody"/><w:qFormat/><w:pPr><w:keepNext w:val="true"/><w:spacing w:before="240" w:after="120"/></w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="Microsoft YaHei" w:cs="Arial"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="TextBody"><w:name w:val="Body Text"/><w:basedOn w:val="Normal"/><w:pPr><w:spacing w:lineRule="auto" w:line="360" w:before="0" w:after="0"/><w:jc w:val="both"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="List"><w:name w:val="List"/><w:basedOn w:val="TextBody"/><w:pPr></w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Arial"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Caption"><w:name w:val="Caption"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:suppressLineNumbers/><w:spacing w:before="120" w:after="120"/></w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Arial"/><w:i/><w:iCs/><w:sz w:val="21"/><w:szCs w:val="24"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Index"><w:name w:val="Index"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:suppressLineNumbers/></w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Arial"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="HeaderandFooter"><w:name w:val="Header and Footer"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:suppressLineNumbers/><w:tabs><w:tab w:val="clear" w:pos="567"/><w:tab w:val="center" w:pos="4252" w:leader="none"/><w:tab w:val="right" w:pos="8504" w:leader="none"/></w:tabs></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Footer"><w:name w:val="Footer"/><w:basedOn w:val="HeaderandFooter"/><w:pPr><w:suppressLineNumbers/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="IndexHeading"><w:name w:val="Index Heading"/><w:basedOn w:val="Heading"/><w:pPr><w:suppressLineNumbers/><w:ind w:start="0" w:end="0" w:hanging="0"/></w:pPr><w:rPr><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="ContentsHeading"><w:name w:val="TOC Heading"/><w:basedOn w:val="IndexHeading"/><w:pPr><w:suppressLineNumbers/><w:ind w:start="0" w:end="0" w:hanging="0"/></w:pPr><w:rPr><w:b/><w:bCs/><w:sz w:val="32"/><w:szCs w:val="32"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Contents1"><w:name w:val="TOC 1"/><w:basedOn w:val="Index"/><w:pPr><w:tabs><w:tab w:val="clear" w:pos="567"/><w:tab w:val="right" w:pos="9638" w:leader="dot"/></w:tabs><w:ind w:start="0" w:end="0" w:hanging="0"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Footnote"><w:name w:val="Footnote Text"/><w:basedOn w:val="Normal"/><w:pPr><w:suppressLineNumbers/><w:spacing w:lineRule="auto" w:line="240"/><w:ind w:start="340" w:end="0" w:hanging="340"/><w:jc w:val="both"/></w:pPr><w:rPr><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Style11"><w:name w:val="Пример из корпуса"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:numPr><w:ilvl w:val="0"/><w:numId w:val="3"/></w:numPr><w:bidi w:val="0"/><w:spacing w:before="120" w:after="120"/><w:ind w:start="567" w:end="0" w:hanging="567"/><w:contextualSpacing/><w:jc w:val="both"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Style12"><w:name w:val="Цитата"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:bidi w:val="0"/><w:ind w:start="567" w:end="0" w:hanging="0"/><w:jc w:val="both"/></w:pPr><w:rPr><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Addressee"><w:name w:val="Envelope Address"/><w:basedOn w:val="Normal"/><w:pPr><w:suppressLineNumbers/><w:spacing w:before="0" w:after="60"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Style13"><w:name w:val="Библиография"/><w:basedOn w:val="TextBody"/><w:qFormat/><w:pPr><w:ind w:start="567" w:end="0" w:hanging="567"/><w:jc w:val="both"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="ListIndent"><w:name w:val="List Indent"/><w:basedOn w:val="TextBody"/><w:qFormat/><w:pPr><w:tabs><w:tab w:val="clear" w:pos="567"/><w:tab w:val="left" w:pos="0" w:leader="none"/></w:tabs><w:ind w:start="2835" w:end="0" w:hanging="2551"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Style14"><w:name w:val="Заглавие таблицы"/><w:basedOn w:val="TextBody"/><w:qFormat/><w:pPr><w:spacing w:lineRule="auto" w:line="240" w:before="240" w:after="60"/><w:ind w:start="0" w:end="0" w:hanging="0"/><w:jc w:val="center"/></w:pPr><w:rPr><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="TableContents"><w:name w:val="Table Contents"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:widowControl w:val="false"/><w:suppressLineNumbers/><w:spacing w:lineRule="auto" w:line="240"/><w:ind w:start="0" w:end="0" w:hanging="0"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="TableHeading"><w:name w:val="Table Heading"/><w:basedOn w:val="TableContents"/><w:qFormat/><w:pPr><w:suppressLineNumbers/><w:jc w:val="center"/></w:pPr><w:rPr><w:b/><w:bCs/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="FrameContents"><w:name w:val="Frame Contents"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Style15"><w:name w:val="Пункт оглавления"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:tabs><w:tab w:val="clear" w:pos="567"/><w:tab w:val="right" w:pos="8504" w:leader="dot"/></w:tabs><w:ind w:start="0" w:end="0" w:hanging="0"/></w:pPr><w:rPr></w:rPr></w:style><w:style w:type="paragraph" w:styleId="PreformattedText"><w:name w:val="Preformatted Text"/><w:basedOn w:val="Normal"/><w:qFormat/><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:rPr><w:rFonts w:ascii="Liberation Mono" w:hAnsi="Liberation Mono" w:eastAsia="NSimSun" w:cs="Liberation Mono"/><w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Style16"><w:name w:val="Заголовок оглавления"/><w:basedOn w:val="Heading1"/><w:qFormat/><w:pPr><w:widowControl/><w:numPr><w:ilvl w:val="0"/><w:numId w:val="0"/></w:numPr><w:suppressAutoHyphens w:val="true"/><w:bidi w:val="0"/><w:spacing w:lineRule="auto" w:line="360"/><w:ind w:start="0" w:end="0" w:hanging="0"/><w:jc w:val="both"/><w:outlineLvl w:val="9"/></w:pPr><w:rPr><w:lang w:val="ru-RU"/></w:rPr></w:style><w:style w:type="numbering" w:styleId="NoList"><w:name w:val="No List"/><w:qFormat/></w:style><w:style w:type="numbering" w:styleId="Numbering123"><w:name w:val="Numbering 123"/><w:qFormat/></w:style><w:style w:type="numbering" w:styleId="Style17"><w:name w:val="Пример из корпуса (список)"/><w:qFormat/></w:style><w:style w:type="numbering" w:styleId="Style18"><w:name w:val="Главы работы"/><w:qFormat/></w:style><w:style w:type="numbering" w:styleId="1"><w:name w:val="Сп1"/><w:qFormat/></w:style><w:style w:type="numbering" w:styleId="Style19"><w:name w:val="Заглавие таблицы (список)"/><w:qFormat/></w:style></w:styles>
+<?xml version="1.0" ?>
+<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="w14">
+ <w:docDefaults>
+  <w:rPrDefault>
+   <w:rPr>
+    <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="NSimSun" w:cs="Arial"/>
+    <w:kern w:val="2"/>
+    <w:sz w:val="28"/>
+    <w:szCs w:val="24"/>
+    <w:lang w:val="ru-RU" w:eastAsia="zh-CN" w:bidi="hi-IN"/>
+   </w:rPr>
+  </w:rPrDefault>
+  <w:pPrDefault>
+   <w:pPr>
+    <w:suppressAutoHyphens w:val="true"/>
+   </w:pPr>
+  </w:pPrDefault>
+ </w:docDefaults>
+ <w:style w:type="paragraph" w:styleId="Normal">
+  <w:name w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:widowControl/>
+   <w:tabs>
+    <w:tab w:val="clear" w:pos="720"/>
+    <w:tab w:val="left" w:pos="567" w:leader="none"/>
+   </w:tabs>
+   <w:suppressAutoHyphens w:val="true"/>
+   <w:overflowPunct w:val="true"/>
+   <w:bidi w:val="0"/>
+   <w:spacing w:lineRule="auto" w:line="360" w:before="0" w:after="0"/>
+   <w:ind w:start="0" w:end="0" w:firstLine="567"/>
+   <w:jc w:val="start"/>
+  </w:pPr>
+  <w:rPr>
+   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="NSimSun" w:cs="Arial"/>
+   <w:color w:val="auto"/>
+   <w:kern w:val="2"/>
+   <w:sz w:val="24"/>
+   <w:szCs w:val="24"/>
+   <w:lang w:val="ru-RU" w:eastAsia="zh-CN" w:bidi="hi-IN"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Heading1">
+  <w:name w:val="Heading 1"/>
+  <w:basedOn w:val="Heading"/>
+  <w:next w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:spacing w:before="360" w:after="120"/>
+   <w:outlineLvl w:val="0"/>
+  </w:pPr>
+  <w:rPr>
+   <w:b/>
+   <w:bCs/>
+   <w:sz w:val="24"/>
+   <w:szCs w:val="36"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Heading2">
+  <w:name w:val="Heading 2"/>
+  <w:basedOn w:val="Heading"/>
+  <w:next w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:numPr>
+    <w:ilvl w:val="1"/>
+    <w:numId w:val="3"/>
+   </w:numPr>
+   <w:spacing w:before="120" w:after="0"/>
+   <w:ind w:start="0" w:end="0" w:firstLine="567"/>
+   <w:outlineLvl w:val="1"/>
+  </w:pPr>
+  <w:rPr>
+   <w:b w:val="false"/>
+   <w:bCs/>
+   <w:i/>
+   <w:sz w:val="24"/>
+   <w:szCs w:val="32"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Heading3">
+  <w:name w:val="Heading 3"/>
+  <w:basedOn w:val="Heading"/>
+  <w:next w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:numPr>
+    <w:ilvl w:val="2"/>
+    <w:numId w:val="3"/>
+   </w:numPr>
+   <w:spacing w:before="120" w:after="0"/>
+   <w:ind w:start="0" w:end="0" w:firstLine="567"/>
+   <w:outlineLvl w:val="2"/>
+  </w:pPr>
+  <w:rPr>
+   <w:b/>
+   <w:bCs/>
+   <w:sz w:val="24"/>
+   <w:szCs w:val="28"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Heading4">
+  <w:name w:val="Heading 4"/>
+  <w:basedOn w:val="Heading"/>
+  <w:next w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:numPr>
+    <w:ilvl w:val="3"/>
+    <w:numId w:val="3"/>
+   </w:numPr>
+   <w:spacing w:before="120" w:after="120"/>
+   <w:outlineLvl w:val="3"/>
+  </w:pPr>
+  <w:rPr>
+   <w:rFonts w:ascii="Arial" w:hAnsi="Arial"/>
+   <w:b/>
+   <w:bCs/>
+   <w:i w:val="false"/>
+   <w:iCs/>
+   <w:color w:val="FF0000"/>
+   <w:sz w:val="26"/>
+   <w:szCs w:val="26"/>
+   <w:shd w:fill="0000FF" w:val="clear"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="DefaultParagraphFont">
+  <w:name w:val="Default Paragraph Font"/>
+  <w:qFormat/>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="character" w:styleId="Emphasis">
+  <w:name w:val="Emphasis"/>
+  <w:basedOn w:val="DefaultParagraphFont"/>
+  <w:qFormat/>
+  <w:rPr>
+   <w:i/>
+   <w:iCs/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="NumberingSymbols">
+  <w:name w:val="Numbering Symbols"/>
+  <w:qFormat/>
+  <w:rPr>
+   <w:i w:val="false"/>
+   <w:iCs w:val="false"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="InternetLink">
+  <w:name w:val="Hyperlink"/>
+  <w:rPr>
+   <w:color w:val="auto"/>
+   <w:u w:val="none"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="IndexLink">
+  <w:name w:val="Index Link"/>
+  <w:qFormat/>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="character" w:styleId="FootnoteCharacters">
+  <w:name w:val="Footnote Characters"/>
+  <w:qFormat/>
+  <w:rPr>
+   <w:vertAlign w:val="superscript"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="FootnoteAnchor">
+  <w:name w:val="Footnote Reference"/>
+  <w:rPr>
+   <w:vertAlign w:val="superscript"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="EndnoteCharacters">
+  <w:name w:val="Endnote Characters"/>
+  <w:qFormat/>
+  <w:rPr>
+   <w:vertAlign w:val="superscript"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="EndnoteAnchor">
+  <w:name w:val="Endnote Reference"/>
+  <w:rPr>
+   <w:vertAlign w:val="superscript"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="Style10">
+  <w:name w:val="Собственные термины"/>
+  <w:qFormat/>
+  <w:rPr>
+   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="NSimSun" w:cs="Arial"/>
+   <w:color w:val="auto"/>
+   <w:spacing w:val="20"/>
+   <w:kern w:val="0"/>
+   <w:sz w:val="24"/>
+   <w:szCs w:val="24"/>
+   <w:lang w:eastAsia="zh-CN" w:bidi="hi-IN"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="character" w:styleId="VisitedInternetLink">
+  <w:name w:val="FollowedHyperlink"/>
+  <w:rPr>
+   <w:color w:val="auto"/>
+   <w:u w:val="none"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Heading">
+  <w:name w:val="Heading"/>
+  <w:basedOn w:val="Normal"/>
+  <w:next w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:keepNext w:val="true"/>
+   <w:spacing w:before="240" w:after="120"/>
+  </w:pPr>
+  <w:rPr>
+   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="Microsoft YaHei" w:cs="Arial"/>
+   <w:sz w:val="28"/>
+   <w:szCs w:val="28"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="TextBody">
+  <w:name w:val="Body Text"/>
+  <w:basedOn w:val="Normal"/>
+  <w:pPr>
+   <w:spacing w:lineRule="auto" w:line="360" w:before="0" w:after="0"/>
+   <w:jc w:val="both"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="List">
+  <w:name w:val="List"/>
+  <w:basedOn w:val="TextBody"/>
+  <w:pPr/>
+  <w:rPr>
+   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Arial"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Caption">
+  <w:name w:val="Caption"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+   <w:spacing w:before="120" w:after="120"/>
+  </w:pPr>
+  <w:rPr>
+   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Arial"/>
+   <w:i/>
+   <w:iCs/>
+   <w:sz w:val="21"/>
+   <w:szCs w:val="24"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Index">
+  <w:name w:val="Index"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+  </w:pPr>
+  <w:rPr>
+   <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Arial"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="HeaderandFooter">
+  <w:name w:val="Header and Footer"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+   <w:tabs>
+    <w:tab w:val="clear" w:pos="567"/>
+    <w:tab w:val="center" w:pos="4252" w:leader="none"/>
+    <w:tab w:val="right" w:pos="8504" w:leader="none"/>
+   </w:tabs>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Footer">
+  <w:name w:val="Footer"/>
+  <w:basedOn w:val="HeaderandFooter"/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="IndexHeading">
+  <w:name w:val="Index Heading"/>
+  <w:basedOn w:val="Heading"/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+   <w:ind w:start="0" w:end="0" w:hanging="0"/>
+  </w:pPr>
+  <w:rPr>
+   <w:b/>
+   <w:bCs/>
+   <w:sz w:val="32"/>
+   <w:szCs w:val="32"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="ContentsHeading">
+  <w:name w:val="TOC Heading"/>
+  <w:basedOn w:val="IndexHeading"/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+   <w:ind w:start="0" w:end="0" w:hanging="0"/>
+  </w:pPr>
+  <w:rPr>
+   <w:b/>
+   <w:bCs/>
+   <w:sz w:val="32"/>
+   <w:szCs w:val="32"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Contents1">
+  <w:name w:val="TOC 1"/>
+  <w:basedOn w:val="Index"/>
+  <w:pPr>
+   <w:tabs>
+    <w:tab w:val="clear" w:pos="567"/>
+    <w:tab w:val="right" w:pos="9638" w:leader="dot"/>
+   </w:tabs>
+   <w:ind w:start="0" w:end="0" w:hanging="0"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Footnote">
+  <w:name w:val="Footnote Text"/>
+  <w:basedOn w:val="Normal"/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+   <w:spacing w:lineRule="auto" w:line="240"/>
+   <w:ind w:start="340" w:end="0" w:hanging="340"/>
+   <w:jc w:val="both"/>
+  </w:pPr>
+  <w:rPr>
+   <w:sz w:val="20"/>
+   <w:szCs w:val="20"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Style11">
+  <w:name w:val="Пример из корпуса"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:numPr>
+    <w:ilvl w:val="0"/>
+    <w:numId w:val="4"/>
+   </w:numPr>
+   <w:bidi w:val="0"/>
+   <w:spacing w:before="120" w:after="120"/>
+   <w:ind w:start="567" w:end="0" w:hanging="567"/>
+   <w:contextualSpacing/>
+   <w:jc w:val="both"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Style12">
+  <w:name w:val="Цитата"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:bidi w:val="0"/>
+   <w:ind w:start="567" w:end="0" w:hanging="0"/>
+   <w:jc w:val="both"/>
+  </w:pPr>
+  <w:rPr>
+   <w:sz w:val="20"/>
+   <w:szCs w:val="20"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Addressee">
+  <w:name w:val="Envelope Address"/>
+  <w:basedOn w:val="Normal"/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+   <w:spacing w:before="0" w:after="60"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Style13">
+  <w:name w:val="Библиография"/>
+  <w:basedOn w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:ind w:start="567" w:end="0" w:hanging="567"/>
+   <w:jc w:val="both"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="ListIndent">
+  <w:name w:val="List Indent"/>
+  <w:basedOn w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:tabs>
+    <w:tab w:val="clear" w:pos="567"/>
+    <w:tab w:val="left" w:pos="0" w:leader="none"/>
+   </w:tabs>
+   <w:ind w:start="2835" w:end="0" w:hanging="2551"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Style14">
+  <w:name w:val="Заглавие таблицы"/>
+  <w:basedOn w:val="TextBody"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:spacing w:lineRule="auto" w:line="240" w:before="240" w:after="60"/>
+   <w:ind w:start="0" w:end="0" w:hanging="0"/>
+   <w:jc w:val="center"/>
+  </w:pPr>
+  <w:rPr>
+   <w:sz w:val="20"/>
+   <w:szCs w:val="20"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="TableContents">
+  <w:name w:val="Table Contents"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:widowControl w:val="false"/>
+   <w:suppressLineNumbers/>
+   <w:spacing w:lineRule="auto" w:line="240"/>
+   <w:ind w:start="0" w:end="0" w:hanging="0"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="TableHeading">
+  <w:name w:val="Table Heading"/>
+  <w:basedOn w:val="TableContents"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:suppressLineNumbers/>
+   <w:jc w:val="center"/>
+  </w:pPr>
+  <w:rPr>
+   <w:b/>
+   <w:bCs/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="FrameContents">
+  <w:name w:val="Frame Contents"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr/>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Style15">
+  <w:name w:val="Пункт оглавления"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:tabs>
+    <w:tab w:val="clear" w:pos="567"/>
+    <w:tab w:val="right" w:pos="8504" w:leader="dot"/>
+   </w:tabs>
+   <w:ind w:start="0" w:end="0" w:hanging="0"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="PreformattedText">
+  <w:name w:val="Preformatted Text"/>
+  <w:basedOn w:val="Normal"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:spacing w:before="0" w:after="0"/>
+  </w:pPr>
+  <w:rPr>
+   <w:rFonts w:ascii="Liberation Mono" w:hAnsi="Liberation Mono" w:eastAsia="NSimSun" w:cs="Liberation Mono"/>
+   <w:sz w:val="20"/>
+   <w:szCs w:val="20"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Style16">
+  <w:name w:val="Заголовок оглавления"/>
+  <w:basedOn w:val="Heading1"/>
+  <w:qFormat/>
+  <w:pPr>
+   <w:widowControl/>
+   <w:numPr>
+    <w:ilvl w:val="0"/>
+    <w:numId w:val="0"/>
+   </w:numPr>
+   <w:suppressAutoHyphens w:val="true"/>
+   <w:bidi w:val="0"/>
+   <w:spacing w:lineRule="auto" w:line="360"/>
+   <w:ind w:start="0" w:end="0" w:hanging="0"/>
+   <w:jc w:val="both"/>
+   <w:outlineLvl w:val="9"/>
+  </w:pPr>
+  <w:rPr>
+   <w:lang w:val="ru-RU"/>
+  </w:rPr>
+ </w:style>
+ <w:style w:type="paragraph" w:styleId="Contents2">
+  <w:name w:val="TOC 2"/>
+  <w:basedOn w:val="Index"/>
+  <w:pPr>
+   <w:tabs>
+    <w:tab w:val="clear" w:pos="567"/>
+    <w:tab w:val="right" w:pos="8221" w:leader="dot"/>
+   </w:tabs>
+   <w:ind w:start="283" w:hanging="0"/>
+  </w:pPr>
+  <w:rPr/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="NoList">
+  <w:name w:val="No List"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Numbering123">
+  <w:name w:val="Numbering 123"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Style17">
+  <w:name w:val="Пример из корпуса (список)"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Style18">
+  <w:name w:val="Главы работы"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="1">
+  <w:name w:val="Сп1"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Style19">
+  <w:name w:val="Заглавие таблицы (список)"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Style20">
+  <w:name w:val="Настоящие главы работы"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Numberingivx">
+  <w:name w:val="Numbering ivx"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="NumberingIVX1">
+  <w:name w:val="Numbering IVX"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Bullet">
+  <w:name w:val="Bullet –"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="11">
+  <w:name w:val="сп1"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="Numberingabc">
+  <w:name w:val="Numbering abc"/>
+  <w:qFormat/>
+ </w:style>
+ <w:style w:type="numbering" w:styleId="NumberingABC1">
+  <w:name w:val="Numbering ABC"/>
+  <w:qFormat/>
+ </w:style>
+</w:styles>
