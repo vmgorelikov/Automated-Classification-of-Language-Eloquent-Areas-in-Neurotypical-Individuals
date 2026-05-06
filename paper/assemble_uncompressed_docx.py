@@ -1,0 +1,36 @@
+'''
+Вспомогательный скрипт для сборки docx из распакованного вида.
+
+:Author: В. М. Гореликов <vmgorelikov@edu.hse.ru>
+'''
+
+from logging import info
+from os import walk
+from os.path import dirname, realpath, join, relpath
+from time import time
+from random import randint
+from zipfile import ZipFile, ZIP_DEFLATED
+
+
+def generate_filename() -> str:
+    '''Генерирует случайное имя файла во избежание перезаписи.'''
+    return f'{int(time())}_{randint(10**6, 10**7-1)}.docx'
+
+
+script_directory = dirname(realpath(__file__))
+UNCOMPRESSED_DIR_NAME = 'uncompressed_docx'
+uncompressed_dir_path = join(script_directory, UNCOMPRESSED_DIR_NAME)
+
+assembled_docx = ZipFile(
+    join(script_directory, generate_filename()), 'w',
+    compression=ZIP_DEFLATED, compresslevel=9
+)
+
+for root, dirs, files in walk(uncompressed_dir_path):
+    for file in files:
+        file_path = join(root, file)
+        assembled_docx.write(file_path,
+                            relpath(file_path,
+                                    start=uncompressed_dir_path))
+
+info('OK')
