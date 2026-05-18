@@ -12,6 +12,7 @@ import rustworkx as rx
 from rustworkx.visit import BFSVisitor, StopSearch
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.exceptions import NotFittedError
+from sklearn.feature_extraction.text import CountVectorizer
 from tqdm import tqdm
 
 class FeatureExtractor(BaseEstimator, TransformerMixin):
@@ -30,7 +31,8 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                  ruwordnet_word_mappings_path: str ='../data/ruwordnet/'
                             'polars_word_mapping_dataframe.joblib.xz',
                  ruwordnet_n_candidates: int = 6,
-                 ruwordnet_n_best: int = 3):
+                 ruwordnet_n_best: int = 3,
+                 skip_expensive: bool = False):
         '''
         :param column_names: Метки столбцов набора данных, если
             подаётся стуктура данных без них.
@@ -84,6 +86,9 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
             количество кратчайших путей и расстояние Левенштейна от
             ближайшего по нему слова в синсете до ответа) будут выданы
             как признаки.
+
+        :param skip_expensive: Пропустить ли извлечение признаков по
+            RuWordNet и частотному списку слов.
         '''
         self.fit_ = False
         self.column_names = column_names
@@ -95,50 +100,56 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
         self.search_stop_words = search_stop_words or ['это']
         self._search_stop_words_replacements = \
                                 [''] * len(self.search_stop_words)
+        self.word_list_path = word_list_path
         self.word_list_n_candidates = word_list_n_candidates
         self.word_list_radius = word_list_radius
         self.ruwordnet_n_candidates = ruwordnet_n_candidates
         self.ruwordnet_n_best = ruwordnet_n_best
+        self.ruwordnet_edges_path = ruwordnet_edges_path
+        self.ruwordnet_word_mappings_path = \
+                                        ruwordnet_word_mappings_path
+        
+        self.skip_expensive = skip_expensive
 
         # TODO: загрузка частотного списка из файла любого формата с
         # именованными колонками
+        self.word_list_cutoff = word_list_cutoff
 
-        self.word_list = pl.read_csv(word_list_path,
-                        separator='\t')\
-                    .sort('Frequency', descending=True)\
-                    .with_columns(pl.col('Frequency')\
-                            .log(base=2)\
-                            .alias('w_log_Frequency'),
-                            pl.col('word')\
-                            .fill_null('')\
-                            .str.to_lowercase()\
-                            .str.replace_all(r'[^а-яё ]', ''))\
-                .filter(pl.col('word').str.len_chars() > 0)\
-                .unique(pl.col('word'))[:word_list_cutoff]
+        if not self.skip_expensive:
+            self.word_list = pl.read_csv(word_list_path,
+                            separator='\t')\
+                        .sort('Frequency', descending=True)\
+                        .with_columns(pl.col('Frequency')\
+                                .log(base=2)\
+                                .alias('w_log_Frequency'),
+                                pl.col('word')\
+                                .fill_null('')\
+                                .str.to_lowercase()\
+                                .str.replace_all(r'[^а-яё ]', ''))\
+                    .filter(pl.col('word').str.len_chars() > 0)\
+                    .unique(pl.col('word'))[:word_list_cutoff]
+            
+            self.word_list_vectorizer = CountVectorizer(dtype=np.int8,
+                                                        analyzer='char')
         
-        self.word_list_vectorizer = CountVectorizer(dtype=np.int8,
-                                                    analyzer='char')
+            self.word_list_vectors = np.ascontiguousarray(
+                                self.word_list_vectorizer\
+                                .fit_transform(self.word_list['word'])\
+                                .toarray())
         
-        self.word_list_vectors = np.ascontiguousarray(
-                                 self.word_list_vectorizer\
-                                 .fit_transform(self.word_list['word'])\
-                                 .toarray())
+            self.word_list_nearest_neighbors = \
+                            faiss.IndexFlatL2(self.word_list_vectors\
+                                            .shape[1])
         
-        self.word_list_nearest_neighbors = \
-                        faiss.IndexFlatL2(self.word_list_vectors\
-                                          .shape[1])
-        
-        self.word_list_nearest_neighbors.add(self.word_list_vectors)
-
-        ruwordnet_edges: pl.DataFrame  = \
-            joblib.load(ruwordnet_edges_path)
-        self.ruwordnet_graph = rx.PyGraph()
-        self.ruwordnet_graph.extend_from_edge_list(
-                                ruwordnet_edges.iter_rows())
-        del ruwordnet_edges
-
-        self.ruwordnet_word_mappings: pl.DataFrame = joblib\
-                                .load(ruwordnet_word_mappings_path)
+            self.word_list_nearest_neighbors.add(self.word_list_vectors)
+            ruwordnet_edges: pl.DataFrame  = \
+                joblib.load(ruwordnet_edges_path)
+            self.ruwordnet_graph = rx.PyGraph()
+            self.ruwordnet_graph.extend_from_edge_list(
+                                    ruwordnet_edges.iter_rows())
+            del ruwordnet_edges
+            self.ruwordnet_word_mappings: pl.DataFrame = joblib\
+                                    .load(ruwordnet_word_mappings_path)
 
     def _clean(self, X: pl.DataFrame) -> pl.DataFrame:
         '''
@@ -256,6 +267,9 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
 
         output = pl.from_dicts(new_rows,
                                infer_schema_length=2**32)
+        
+        # это может быть полезно
+        output = output.select(sorted(output.columns))
 
         return output
     
@@ -520,16 +534,20 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                 if c not in counts.columns])\
             .select(self.top_editop_columns)
         
-        word_list_metrics = self._get_word_list_metrics(X)
-        ruwordnet_metrics = self._get_ruwordnet_metrics(X)
-
-        X = pl.concat([X,
+        all_feature_dataframes = [X,
                 relative_lengths,
-                normalized_total_editops,
-                counts,
-                word_list_metrics,
-                ruwordnet_metrics
-                ],
+                normalized_total_editops
+                ]
+
+        if not self.skip_expensive:
+            word_list_metrics = self._get_word_list_metrics(X)
+            ruwordnet_metrics = self._get_ruwordnet_metrics(X)
+            all_feature_dataframes += [word_list_metrics,
+                                       ruwordnet_metrics]
+
+        all_feature_dataframes += [counts]
+
+        X = pl.concat(all_feature_dataframes,
                 how='horizontal') \
             .drop(pl.selectors.string()) \
             .fill_null(0).drop('RT_start')
