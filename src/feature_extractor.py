@@ -158,7 +158,7 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
         '''
         return X\
             .with_columns( # заполнение пропусков
-                pl.col('RT_start').fill_null(strategy='zero'),
+                pl.col('RT_start').fill_null(self.rt_start_mode),
                 pl.col('Response_annot')\
                     .fill_null('')\
                     # очистка
@@ -346,14 +346,15 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                               schema=frequency_difference_column_names,
                               orient='row')  
                               ).hstack(pairs)
-
-        return (
-            X.join(results,
+        X = X.join(results,
                    on=['Response_annot', 'Stimulus'],
-                   how='left')
+                   how='left')\
             .select(distance_column_names + \
                     frequency_difference_column_names)
-        )
+        null_count_ = X.null_count()
+        if null_count_.sum_horizontal().sum() > 0:
+            print(null_count_)
+        return X
 
     class _KMaxVisitor(BFSVisitor):
         def __init__(self, stimulus_id, k):
@@ -466,8 +467,17 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                     maintain_order=True)\
             .with_columns(pl.col(r'^levenshtein_distance_.+$') /\
                           pl.col('Stimulus').str.len_chars())\
-            .drop('row_index', 'Stimulus', 'Response_annot', 'id')
-        # print(X.columns)
+            .drop('row_index', 'Stimulus', 'Response_annot', 'id')\
+            .with_columns(
+                pl.col(r'^levenshtein_distance_.+$').fill_null(127),
+                pl.col(r'^graph_distance_.+$').fill_null(127),
+                pl.col(r'^n_paths_.+$').fill_null(0),
+            )
+        
+        null_count_ = X.null_count()
+        if null_count_.sum_horizontal().sum() > 0:
+            print(null_count_.unpivot())
+
         return X.select(pl.all().name.prefix("ruwordnet_"))
 
     def fit(self, X: pl.DataFrame | np.ndarray, y: Any = None):
@@ -476,8 +486,8 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
 
         self.use_transcription = self.force_use_transcription or not\
             X.get_column('Response_transcription_annot').is_null().any()
-        X = self._clean(X)
         self.rt_start_mode = X['RT_start'].mode()
+        X = self._clean(X)
         # определение самых частотных операций в датасете, на котором
         # преобразователь фиттится
         X = self._editop_counts(X)
@@ -532,7 +542,7 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                 [pl.lit(0, dtype=pl.Int64).alias(c) 
                 for c in self.top_editop_columns
                 if c not in counts.columns])\
-            .select(self.top_editop_columns)
+            .select(self.top_editop_columns).fill_null(0)
         
         all_feature_dataframes = [X,
                 relative_lengths,
@@ -546,10 +556,8 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                                        ruwordnet_metrics]
 
         all_feature_dataframes += [counts]
-        X.with_columns(pl.col('RT_start').fill_null(self.rt_start_mode))
         X = pl.concat(all_feature_dataframes,
                 how='horizontal') \
-            .drop(pl.selectors.string()) \
-            .fill_null(0)
+            .drop(pl.selectors.string())
         # print(X.columns)
         return X
