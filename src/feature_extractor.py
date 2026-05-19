@@ -477,7 +477,7 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
         self.use_transcription = self.force_use_transcription or not\
             X.get_column('Response_transcription_annot').is_null().any()
         X = self._clean(X)
-
+        self.rt_start_mode = X['RT_start'].mode()
         # определение самых частотных операций в датасете, на котором
         # преобразователь фиттится
         X = self._editop_counts(X)
@@ -546,10 +546,10 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                                        ruwordnet_metrics]
 
         all_feature_dataframes += [counts]
-
+        X['RT_start'] = X['RT_start'].fill_null(self.rt_start_mode)
         X = pl.concat(all_feature_dataframes,
                 how='horizontal') \
             .drop(pl.selectors.string()) \
-            .fill_null(0).drop('RT_start')
+            .fill_null(0)
         # print(X.columns)
         return X
