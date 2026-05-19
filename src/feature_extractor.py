@@ -546,7 +546,7 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                                        ruwordnet_metrics]
 
         all_feature_dataframes += [counts]
-        X['RT_start'] = X['RT_start'].fill_null(self.rt_start_mode)
+        X.with_columns(pl.col('RT_start').fill_null(self.rt_start_mode))
         X = pl.concat(all_feature_dataframes,
                 how='horizontal') \
             .drop(pl.selectors.string()) \
