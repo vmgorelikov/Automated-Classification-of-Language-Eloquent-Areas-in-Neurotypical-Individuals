@@ -1,0 +1,29 @@
+class_1,class_2,include_features
+0,1,""
+0,2,RT_start^.+_normalized_total$^word_list_.+$^ruwordnet_.+$^.+_[а-яё ]$
+0,3,RT_start^.+_normalized_total$^word_list_.+$^ruwordnet_.+$^.+_[а-яё ]$
+0,4,RT_start^.+_normalized_total$^word_list_.+$^ruwordnet_.+$^.+_[а-яё ]$
+0,5,RT_startrelative_length^.+_normalized_total$^word_list_.+$^.+_[а-яё ]$
+0,6,RT_startrelative_length^.+_normalized_total$^ruwordnet_.+$^.+_[а-яё ]$
+0,7,""
+1,2,relative_length^word_list_.+$^ruwordnet_.+$^.+_[а-яё ]$
+1,3,RT_start^.+_normalized_total$^word_list_.+$^.+_[а-яё ]$
+1,4,RT_startrelative_length^.+_normalized_total$^word_list_.+$^.+_[а-яё ]$
+1,5,RT_startrelative_length^ruwordnet_.+$^.+_[а-яё ]$
+1,6,relative_length^.+_normalized_total$^ruwordnet_.+$^.+_[а-яё ]$
+1,7,relative_length^word_list_.+$^ruwordnet_.+$^.+_[а-яё ]$
+2,3,^.+_normalized_total$^word_list_.+$^ruwordnet_.+$
+2,4,RT_start^.+_normalized_total$
+2,5,RT_startrelative_length^.+_normalized_total$^.+_[а-яё ]$
+2,6,RT_start^.+_normalized_total$^word_list_.+$^ruwordnet_.+$
+2,7,^.+_normalized_total$^word_list_.+$^ruwordnet_.+$^.+_[а-яё ]$
+3,4,RT_start^.+_normalized_total$^ruwordnet_.+$^.+_[а-яё ]$
+3,5,relative_length^.+_normalized_total$^ruwordnet_.+$^.+_[а-яё ]$
+3,6,^.+_normalized_total$^ruwordnet_.+$
+3,7,relative_length^.+_normalized_total$^word_list_.+$^ruwordnet_.+$
+4,5,RT_startrelative_length^.+_[а-яё ]$
+4,6,RT_startrelative_length^.+_normalized_total$^ruwordnet_.+$^.+_[а-яё ]$
+4,7,RT_start^.+_normalized_total$^.+_[а-яё ]$
+5,6,RT_start^.+_normalized_total$^.+_[а-яё ]$
+5,7,RT_startrelative_length^.+_normalized_total$^.+_[а-яё ]$
+6,7,relative_length^word_list_.+$^ruwordnet_.+$
