@@ -1,0 +1,22 @@
+class_1,class_2,include_features
+0,2,""
+0,3,""
+0,4,""
+0,5,RT_startrelative_lengthrelative_length_transcription^T.+_normalized_total$^[^T].+_[а-яё ]$
+0,6,relative_lengthrelative_length_transcription^word_list_.+$^ruwordnet_.+$
+0,7,RT_startrelative_length^[^T].+_normalized_total$^[^T].+_[а-яё ]$^T.+_[а-яё ]$
+2,3,RT_startrelative_length_transcription^[^T].+_normalized_total$^T.+_normalized_total$^ruwordnet_.+$
+2,4,""
+2,5,RT_startrelative_length_transcription^T.+_normalized_total$^word_list_.+$^[^T].+_[а-яё ]$
+2,6,RT_startrelative_lengthrelative_length_transcription^[^T].+_normalized_total$^word_list_.+$^T.+_[а-яё ]$
+2,7,RT_start^[^T].+_normalized_total$^T.+_normalized_total$^ruwordnet_.+$^[^T].+_[а-яё ]$^T.+_[а-яё ]$
+3,4,""
+3,5,""
+3,6,relative_length^T.+_normalized_total$^ruwordnet_.+$^[^T].+_[а-яё ]$
+3,7,""
+4,5,""
+4,6,relative_lengthrelative_length_transcription^[^T].+_normalized_total$^T.+_normalized_total$^ruwordnet_.+$^[^T].+_[а-яё ]$^T.+_[а-яё ]$
+4,7,""
+5,6,""
+5,7,RT_startrelative_length_transcription^[^T].+_normalized_total$^[^T].+_[а-яё ]$^T.+_[а-яё ]$
+6,7,^[^T].+_normalized_total$^T.+_normalized_total$^word_list_.+$^ruwordnet_.+$^T.+_[а-яё ]$
