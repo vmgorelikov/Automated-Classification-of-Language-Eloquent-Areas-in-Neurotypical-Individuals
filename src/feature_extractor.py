@@ -265,6 +265,9 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                 
             new_rows.append(dict(pairs))
 
+        # это можно сделать иначе, как-нибудь через pivot и т.д.,
+        # но у меня не хватило времени и кажется оно и так хорошо
+        # работает
         output = pl.from_dicts(new_rows,
                                infer_schema_length=2**32)
         
@@ -486,7 +489,7 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
 
         self.use_transcription = self.force_use_transcription or not\
             X.get_column('Response_transcription_annot').is_null().any()
-        self.rt_start_mode = X['RT_start'].mode()
+        self.rt_start_mode = X['RT_start'].drop_nulls().median()
         X = self._clean(X)
         # определение самых частотных операций в датасете, на котором
         # преобразователь фиттится
