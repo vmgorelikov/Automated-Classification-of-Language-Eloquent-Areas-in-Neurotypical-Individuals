@@ -52,7 +52,8 @@ else:
     warning('Файл для распаковки не задан. Ищу кандидатов в моём '
             'каталоге.')
     file_to_decompress_candidates = \
-        glob(join(script_directory, '*.docx'))
+        [file_ for file_ in glob(join(script_directory, '*.docx'))
+         if '\\~$' not in file_]
     if len(file_to_decompress_candidates) > 1:
         fatal('Кандидатов для распаковки более одного. Скрипт '
               'остановлен.')
