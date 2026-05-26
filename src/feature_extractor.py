@@ -481,6 +481,8 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
         if null_count_.sum_horizontal().sum() > 0:
             print(null_count_.unpivot())
 
+        X = X.drop('graph_distance_min')
+
         return X.select(pl.all().name.prefix("ruwordnet_"))
 
     def fit(self, X: pl.DataFrame | np.ndarray, y: Any = None):
