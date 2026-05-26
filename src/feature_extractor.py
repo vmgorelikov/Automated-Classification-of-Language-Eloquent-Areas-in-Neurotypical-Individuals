@@ -19,18 +19,18 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
     def __init__(self, column_names: Sequence[str] | None = None,
                  max_editops: int = 10000,
                  force_use_transcription: bool = False,
-                 stop_words: list[str] | None = None,
+                 stop_words: tuple[str] = ('нрзб',),
                  word_list_path: str = '../data/word_frequencies/'
                                        'AranRusi_a.tsv',
                  word_list_cutoff: int | None = None,
-                 search_stop_words: list[str] | None = None,
+                 search_stop_words: tuple[str] = ('это',),
                  word_list_n_candidates: int = 200,
                  word_list_radius: int = 3,
                  ruwordnet_edges_path: str = '../data/ruwordnet/'
                                'polars_edges_dataframe.joblib.xz',
                  ruwordnet_word_mappings_path: str ='../data/ruwordnet/'
                             'polars_word_mapping_dataframe.joblib.xz',
-                 ruwordnet_n_candidates: int = 6,
+                 ruwordnet_n_candidates: int = 200,
                  ruwordnet_n_best: int = 3,
                  skip_expensive: bool = False):
         '''
@@ -95,9 +95,9 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
         self.max_editops = max_editops
         self.force_use_transcription = force_use_transcription
         self.use_transcription = self.force_use_transcription
-        self.stop_words = stop_words or ['нрзб']
+        self.stop_words = stop_words
         self._stop_words_replacements = [''] * len(self.stop_words)
-        self.search_stop_words = search_stop_words or ['это']
+        self.search_stop_words = search_stop_words
         self._search_stop_words_replacements = \
                                 [''] * len(self.search_stop_words)
         self.word_list_path = word_list_path
