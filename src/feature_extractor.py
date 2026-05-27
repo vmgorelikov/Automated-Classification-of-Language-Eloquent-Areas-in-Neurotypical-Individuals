@@ -326,7 +326,7 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
              np.abs(
               self.word_list['w_log_Frequency'][candidate_indices[i]]\
                                                            .to_numpy() -
-              pairs_with_frequencies['w_log_Frequency'][i]
+              0
             )
             distances.partition(radius - 1)
             indices_to_include = np.argsort(distances[:radius],
