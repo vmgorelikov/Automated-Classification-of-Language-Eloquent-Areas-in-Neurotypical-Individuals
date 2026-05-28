@@ -168,8 +168,7 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
                     .str.replace_many(self.stop_words,
                                       self._stop_words_replacements)\
                     .str.replace_all(r'\s+', ' ')\
-                    .str.replace_all('ё', 'е'),
-                pl.col('Response_transcription_annot').fill_null('')
+                    .str.replace_all('ё', 'е')
             )
 
     
