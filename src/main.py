@@ -72,7 +72,7 @@ if dataset is None:
     exit(1)
 
 missing_columns = {'RT_start', 'Stimulus', 'Response_annot'} - \
-                    {name.lower() for name in dataset.columns}
+                    set(dataset.columns)
 
 if missing_columns:
     fatal('Во входном файле нет колонок ' + ', '.join(missing_columns) +
