@@ -1,5 +1,6 @@
 data/transcribed/
-data/processed/
+data/processed/*
+!data/processed/error_type_ids.json
 .venv/
 **/*.docx
 **/*.odt
