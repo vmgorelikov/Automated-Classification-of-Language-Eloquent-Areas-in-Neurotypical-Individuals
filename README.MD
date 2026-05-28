@@ -1,6 +1,6 @@
 # Использование
 
-Требуется заранее установленный Python 3.12
+Требуется заранее установленный [Python 3.12](https://www.python.org/downloads/release/python-31213/).
 
 ```bash
 git clone https://github.com/vmgorelikov/Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals.git
@@ -8,6 +8,8 @@ git clone https://github.com/vmgorelikov/Automated-Classification-of-Language-El
 cd Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals
 
 python -m venv .venv
+
+.venv/Scripts/activate
 
 pip install -r requirements.txt
 
@@ -17,15 +19,31 @@ python main.py путь_ко_входному_файлу.xlsx
 
 ```
 
-Входной файл должен быть в формате Office Open XML SpreadsheetML (.xlsx) иметь единственный лист со столбцами, названными `RT_start` (время начала ответа), `Stimulus` (стимул) и `Response_annot` (орфографическая запись ответа).
+Входной файл должен иметь единственный лист со столбцами, названными `RT_start` (время начала ответа), `Stimulus` (стимул) и `Response_annot` (орфографическая запись ответа).
 
-В каталоге `output` появится выходной файл с предсказаниями классов.
-
-Набор данных для выполнения работы был получен на условиях нераспространения.
+В каталоге входного файла появится файл с предсказаниями.
 
 # Структура репозитория
 
-`src/` — исходный код прикладного результата.
-`data/` — данные, необходимые для функционирования прикладного результата (частотный список, данные машиночитаемого словаря и проч.)
-`notebooks/` — черновые тетради, использовавшиеся для выполнения работы.
-`paper/` — не используется.
+`src/` Исходный код.
++ `feature_extractor.py` Извлекатель признаков.
++ `main.py` Пользовательский интерфейс.
+
+`data/` Данные.
++ `transcribed/` Исходные данные экспериментов[^1].
++ `processed/` Очищенные данные экспериментов[^1].
++ `ruwordnet/` Данные [RuWordNet](https://www.ruwordnet.ru/).
+  + `polars_edges_dataframe.joblib.xz` Рёбра RuWordNet.
+  + `polars_word_mapping_dataframe.joblib.xz` Словник, ставящий по взаимное соответствие ID вершин и слова в RuWordNet.
++ `word_frequencies/` Частотные списки слов.
+  + `AranRusi_a.tsv` Частотный список слов из [Araneum Russicum Maximum](http://aranea.juls.savba.sk/aranea/run.cgi/corp_info?corpname=AranRusi_a).
++ `models/` Всё, что связано с работой непосредственно классификаторов.
+
+`notebooks/` Тетради, использовавшиеся при выполнении работы.
++ `dataset_preparation.ipynb` Подготовка датасета.
++ `dataset_split.ipynb` Разбиение датасета.
++ `feature_extraction.ipynb` Извлечение признаков (черновая).
++ `feature_and_model_selection.ipynb` Выбор модели и признаков.
++ `final_evaluations.ipynb` Окончательная оценка моделей на тестовой выборке.
+
+[^1] Набор данных экспериментов с ТМС для выполнения работы был получен на условиях нераспространения.
