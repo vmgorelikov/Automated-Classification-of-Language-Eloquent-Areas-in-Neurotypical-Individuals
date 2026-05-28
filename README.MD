@@ -3,9 +3,9 @@
 Требуется заранее установленный [Python 3.12](https://www.python.org/downloads/release/python-31213/).
 
 ```bash
-git clone https://github.com/vmgorelikov/Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals.git
+git clone https://github.com/vmgorelikov/Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals.git ACoLEA
 
-cd Automated-Classification-of-Language-Eloquent-Areas-in-Neurotypical-Individuals
+cd ACoLEA
 
 python -m venv .venv
 
